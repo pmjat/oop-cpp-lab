@@ -1,2 +1,2 @@
-# oop-lab00
+# OOP C++ LAB
  
