@@ -13,4 +13,4 @@ void del_triangle(Triangle* t);
 short tr_resize(Triangle *t, double a, double b, double c);
 double tr_area(Triangle *t);
 double tr_perimeter(Triangle *t);
-std::string tr_string(Triangle *t);
+string tr_string(Triangle *t);
