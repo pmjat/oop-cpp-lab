@@ -60,5 +60,5 @@ string tr_string_d(Triangle *t) {
 	trstr = trstr + buffer;
 	sprintf(buffer, "Area: %6.2lf\n", tr_area(t));
 	trstr = trstr + buffer;
-    return trstr;
+	return trstr;
 }
