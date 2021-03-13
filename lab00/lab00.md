@@ -1,85 +1,64 @@
-## Consider following header file traiangle.h and triangle.cpp
+# Lab 00: Revisit C – structs, pointers, dynamic memory
+  
+Consider following triangle header file [(triangle.h)](./triangle/triangle.h) and  
+implementation file [(triangle.cpp)](./triangle/triangle.cpp), and
+  
+### (1) execute following program
 
-```c++
-    #include <string>
-    using std::string;
-
-    typedef struct {
-        double a;
-        double b;
-        double c;
-    } Triangle;
-
-    Triangle* new_triangle();
-    Triangle* new_triangle(double a, double b, double c);
-    void del_triangle(Triangle* t);
-    short tr_resize(Triangle *t, double a, double b, double c);
-    double tr_area(Triangle *t);
-    double tr_perimeter(Triangle *t);
-    std::string tr_string(Triangle *t);
-```
 ```c++
     #include <stdio.h>
-    #include <math.h>
     #include "triangle.h"
 
-    Triangle* new_triangle() {
-      Triangle* t = (Triangle *) malloc(sizeof(Triangle) );
-      return t;	
-    }
+    int main(int argc, char **argv) {
 
-    Triangle* new_triangle(double a, double b, double c) {
-        Triangle* t = (Triangle *) malloc(sizeof(Triangle) );
-      if (!tr_resize(t, a, b, c)) {
-        free(t);
-        return NULL;
-      }
-      else
-        return t;	
-    }
-
-    void del_triangle(Triangle* t) {
-      free(t);
-    }
-
-    short tr_resize(Triangle *t, double a, double b, double c) {
-      double s = (a+b+c)/2;
-      if( a >= s || b >=s || c >=s)
-        return 0;
-      t->a = a;
-      t->b = b;
-      t->c = c;
-      return 1;
-    }
-
-    double tr_area(Triangle *t) {
-      double area;
-        double s = (t->a + t->b + t->c)/2;
-        if(t->a >= s || t->b >=s || t->c >=s)
-            area = -1;        
+        Triangle* t = new_triangle();
+        double a, b, c;
+        printf("Enter three sides for a triangle\n"); 
+        scanf("%lf %lf %lf",&a, &b, &c);
+        printf("Inputs: %6.2lf %6.2lf %6.2lf\n", a, b, c);
+        if (tr_resize(t, a, b, c)) {
+            printf("Perimeter: %10.2lf\n", tr_perimeter(t));
+            printf("Area: %10.2lf\n", tr_area(t));		
+        }
         else
-            area = sqrt(s*(s-t->a)*(s-t->b)*(s-t->c));
-        return area;
-    }
+            printf("Invalid values inputted for a triangle!!");
+        del_triangle(t);
 
-    double tr_perimeter(Triangle *t) {
-        return t->a+t->b+t->c;
+        return 0;
     }
+```
+  
+### (2) execute following program
 
-    string tr_string(Triangle *t) {
-      char buffer[50];
-        sprintf(buffer, "Triangle (%6.2lf, %6.2lf, %6.2lf)\n", t->a, t->b, t->c);
-        return buffer;
-    }
+  
+```c++
+    #include <stdio.h>
+    #include "triangle.h"
 
-    string tr_string_d(Triangle *t) {
-      string trstr;
-      char buffer[50];
-        sprintf(buffer, "Sides (a,b,c): %6.2lf, %6.2lf, %6.2lf\n", t->a, t->b, t->c);
-      trstr = trstr + buffer;
-        sprintf(buffer, "Perimeter: %6.2lf\n", tr_perimeter(t));
-      trstr = trstr + buffer;
-        sprintf(buffer, "Area: %6.2lf\n", tr_area(t));
-      trstr = trstr + buffer;
-        return trstr;
+    int main(int argc, char **argv) {
+
+        int n = 3;
+
+        Triangle* ta[n];
+        ta[0] = new_triangle(3,4,5);
+        ta[1] = new_triangle(10,8,20);
+        ta[2] = new_triangle(5.5,4.2,4.8);
+
+        double total_area = 0;
+        for(int i = 0; i < 3; i++)
+            if (ta[i] != NULL) {
+                total_area += tr_area( ta[i] );
+                printf("%s", tr_string(ta[i]).c_str());		
+            }
+            else
+                printf("Invalid Triangle\n");		
+
+        printf("Total Area: %8.2lf\n", total_area);		
+
+        //free storage
+        for(int i = 0; i < 3; i++)
+            del_triangle(ta[i]);
+
+        return 0;
     }
+```
