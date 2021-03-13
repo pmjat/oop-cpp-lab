@@ -2,9 +2,9 @@
 using std::string;
 
 typedef struct {
-    double a;
-    double b;
-    double c;
+	double a;
+	double b;
+	double c;
 } Triangle;
 
 Triangle* new_triangle();
