@@ -4,6 +4,7 @@
 
 Triangle* new_triangle() {
 	Triangle* t = (Triangle *) malloc(sizeof(Triangle) );
+	t->c = t->b = t->a = 0;
 	return t;	
 }
 
