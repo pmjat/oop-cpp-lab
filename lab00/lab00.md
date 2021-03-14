@@ -85,7 +85,7 @@ int main(int argc, char **argv) {
 #include <string.h>
 #include "bankaccount.h"
 
-int main1(int argc, char **argv) {
+int main(int argc, char **argv) {
 
 	BankAccount* ba1 = new_account();
 	strcpy(ba1->customer, "Sunil");
