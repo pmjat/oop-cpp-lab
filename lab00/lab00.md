@@ -7,7 +7,7 @@ In this lab you are given code that implement following abstractions
 
 Your objective of this lab is to execute, unersrtand code, and appreciate the concepts used.  
 Examples here demonstrate following:  
-* factoring code for concerns
+* code-factoring for concerns
 * abstraction implementation through C-structs, and
 * dynamic memory allocation
 
