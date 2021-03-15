@@ -5,7 +5,8 @@ In this lab you are given code that implement following abstractions
 1. Bank Account ([bankaccount.h](./bank/bankaccount.h), [bankaccount.cpp](./triangle/bankaccount.cpp))
 1. Bank Branch ([branch.h](./bank/branch.h), [branch.cpp](./bank/branch.cpp))
 
-Your objective of the lab is execute, unersrtand code, and appreciate the concepts used.  
+Your objective of this lab is to execute, unersrtand code, and appreciate the concepts used.  
+Examples here demonstrate following:  
 * abstraction implementation through C-structs, and
 * dynamic memory allocation
 
