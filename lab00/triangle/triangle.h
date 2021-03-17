@@ -1,3 +1,6 @@
+#ifndef TRIANGLE_H
+#define	TRIANGLE_H
+
 #include <string>
 using std::string;
 
@@ -14,3 +17,5 @@ short tr_resize(Triangle *t, double a, double b, double c);
 double tr_area(Triangle *t);
 double tr_perimeter(Triangle *t);
 string tr_string(Triangle *t);
+
+#endif //TRIANGLE_H
