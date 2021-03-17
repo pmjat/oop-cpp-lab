@@ -3,10 +3,12 @@
 In this lab you are given code that implement following abstractions  
 1. Triangle ([triangle.h](./triangle/triangle.h) and [triangle.cpp](./triangle/triangle.cpp))
 1. Bank Account ([bankaccount.h](./bank/bankaccount.h), [bankaccount.cpp](./triangle/bankaccount.cpp))
-1. Bank Branch ([branch.h](.bank/branch.h), [branch.cpp](./bank/branch.cpp))
+1. Bank Branch ([branch.h](./bank/branch.h), [branch.cpp](./bank/branch.cpp))
 
-Objective of the lab is to appreciate concepts of:
-* abstraction implementation through structs, and
+Your objective of this lab is to execute, unersrtand code, and appreciate the concepts used.  
+Examples here demonstrate following:  
+* code-factoring for concerns
+* abstraction implementation through C-structs, and
 * dynamic memory allocation
 
 ### Exercise (1) execute following triangle tester 
@@ -85,7 +87,7 @@ int main(int argc, char **argv) {
 #include <string.h>
 #include "bankaccount.h"
 
-int main1(int argc, char **argv) {
+int main(int argc, char **argv) {
 
 	BankAccount* ba1 = new_account();
 	strcpy(ba1->customer, "Sunil");
@@ -111,7 +113,7 @@ int main1(int argc, char **argv) {
 >  `branch.h` and `branch.cpp` to your project.
 
 ```c++
-//file name: bankaccount_tester.cpp
+//file name: branch_tester.cpp
 #include <stdio.h>
 #include <string.h>
 #include <string>
@@ -121,18 +123,25 @@ extern short NACC;
 extern BankAccount* accounts[];
 
 int main(int argc, char **argv) {
-
 	
 	init_branch();
 
-	long accno1 = open_account("Sanjay", 10000);
-	long accno2 = open_account("Pankaj", 1000);
-	long accno3 = open_account("Arnav", 5000);
-	long accno4 = open_account("Sanjay", 3000);
+	open_account("Sanjay", 10000);
+	open_account("Pankaj", 1000);
+	open_account("Arnav", 5000);
+	open_account("Sanjay", 3000);
+
+	BankAccount* acc;
+	//List All accounts
+	for (int i=0; i < NACC; i++ ) {
+		acc = accounts[i];
+		if (acc != NULL)
+			printf("Account: %s\n", ba_string(acc).c_str());		
+	} 
 
 	//Now suppose you want to depsoit 3000 to 
 	//   accno 1003.
-	BankAccount* acc = find_account( 1003 );
+	acc = find_account( 1003 );
 	deposit(acc, 3000);
 	//Show new balance of the account
 	printf("Account: %s\n", ba_string(acc).c_str());
