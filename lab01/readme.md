@@ -1,6 +1,6 @@
 # Creating Abstract Data Types in C
 
-## Exercise 1. Add more functions for Complex
+## Exercise 1. Add more functions on `Complex` type
 
 1. Take Complex type discussed in the lecture. Let the name of source file be `complex.cpp`
 2. Create following functions: 
