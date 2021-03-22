@@ -10,7 +10,7 @@
     * subtract complex and return complex `Complex subtract_complex(Complex c1, Complex c2)`
     * multiply two complex and return complex `Complex add_complex(Complex c1, Complex c2)`
     * compute modulus of a complex number `double modulus(Complex c)`  
-    and call them in main function
+3. Call and test all above functions in `main` function
 
 ## Exercise 2. Inventory Item
 
@@ -21,7 +21,7 @@
 3. Create functions for 
     * reading an Item object from console `void read_item(Item*)`
     * printing an Item object `void print_item(Item)`
-    and call them in main function
+3. Call and test all above functions in `main` function
 
 ## Exercise 3. Inventory implemented as array of Items
 
@@ -34,4 +34,4 @@
     * search an item in inventory and return position `short find_item(Item*, short item_no)`
     * search an item in inventory and retutn Item object `Item find_item(Item*, short item_no)`
     * update existing item `Item find_item(Item*, Item item, short index)` second parameter `item` is placed at position index. index starts from 0.
-    and call them in main function
+3. Call and test all above functions in `main` function
