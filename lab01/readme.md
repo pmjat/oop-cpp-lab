@@ -9,7 +9,7 @@
     * add two complex and return complex `Complex add_complex(Complex c1, Complex c2)`
     * subtract complex and return complex `Complex subtract_complex(Complex c1, Complex c2)`
     * multiply two complex and return complex `Complex add_complex(Complex c1, Complex c2)`
-    * compute modulus of a complex number `double modulus(Complex c)`
+    * compute modulus of a complex number `double modulus(Complex c)`  
     and call them in main function
 
 ## Exercise 2. Inventory Item
