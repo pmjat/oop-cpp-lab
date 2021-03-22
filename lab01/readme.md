@@ -28,7 +28,7 @@
 1. Create another C++ source file, name it as `inventory2.cpp`. 
 1. Clear content of copied `main` function
 2. in `main`, create an array of type `Item`. Let the size of array be 20.  
-`Item inventory[10];`
+`Item inventory[20];`
 4. Declare a global variable `NITEMS` of type `short` and initialized with zero. The objective of this variable is to maintain actual number of items in the inventory.
 5. Create functions that manipulate the inventory 
     * add items to inventory; function prototype `void add_item(Item*, Item)` this function also increments global variable `NITEMS` accordingly.
