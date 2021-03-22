@@ -33,5 +33,7 @@
     * add items to inventory; function prototype `void add_item(Item*, Item)` this function also increments global variable `NITEMS` accordingly.
     * search an item in inventory and return position `short find_item(Item*, short item_no)`
     * search an item in inventory and retutn Item object `Item find_item(Item*, short item_no)`
-    * update existing item `Item find_item(Item*, Item item, short index)` second parameter `item` is placed at position index. index starts from 0.
+    * get an item at position index from inventory, `Item find_item(Item*, short index)`
+    * update existing item `Item find_item(Item*, Item item, short index)` second parameter `item` is placed at position `index`. index starts from 0.
 3. Call and test all above functions in `main` function
+4. Add a functionality in main that prints all items in the `inventory`
