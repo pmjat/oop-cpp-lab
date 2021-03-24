@@ -35,6 +35,6 @@
     * search an item in inventory and return position `short find_position(Item* inventory, short item_no)`
     * search an item in inventory and retutn Item object `Item find_item(Item* inventory, short item_no)`
     * get an item at given position from inventory, `Item get_item(Item* inventory, short pos)`
-    * update existing item `Item update_item(Item* inventory, Item item, short pos)` second parameter `item` is placed at position `pos`. position starts from 0.
+    * update existing item `void update_item(Item* inventory, Item item, short pos)` second parameter `item` is placed at position `pos`. position starts from 0.
 6. Call and test all above functions in `main` function
 7. Add a functionality in main that prints all items in the `inventory`
