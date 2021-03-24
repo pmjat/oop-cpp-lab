@@ -31,7 +31,7 @@
 `Item inventory[20];`
 4. Declare a global variable `NITEMS` of type `short` and initialized with zero. The objective of this variable is to maintain actual number of items in the inventory.
 5. Create functions that manipulate the inventory 
-    * add items to inventory; function prototype `void add_item(Item* inventory, Item)` this function also increments global variable `NITEMS` accordingly.
+    * add items to inventory; function prototype `void add_item(Item* inventory, Item item)` this function also increments global variable `NITEMS` accordingly.
     * search an item in inventory and return position `short find_position(Item* inventory, short item_no)`
     * search an item in inventory and retutn Item object `Item find_item(Item* inventory, short item_no)`
     * get an item at given position from inventory, `Item get_item(Item* inventory, short pos)`
