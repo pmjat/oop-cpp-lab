@@ -154,9 +154,15 @@ void print_book(const Book& b) {
 
 ### Exercise 4. Let us use `string` object of C++
 
-You need to implement `sort` and `binarySearch` functions in the program given below.  
-so that the program runs as expected!  
-For sorting, you can implement any algorithm that you are familiar with.  
+In this exercise we perform following two operations on a `string array`  
+1. Bubble sort. If not familiar you can understand bubble sort from here:  
+https://www.geeksforgeeks.org/bubble-sort/
+2. Binary Search. You can refer here for understanding binary search:  
+https://www.geeksforgeeks.org/binary-search/
+
+You are given program context in which these opeations on string array.  
+You only need to implement `sort` and `binarySearch` functions.  
+Test run your functions by executing the said program.
 
 While implementing these functions, you may require learning following operations of string object  
 Relational operations: http://www.cplusplus.com/reference/string/string/operators/  
