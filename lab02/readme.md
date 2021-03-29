@@ -154,14 +154,14 @@ void print_book(const Book& b) {
 
 ### Exercise 4. Let us use `string` object of C++
 
-You need to implement sort function in program given below.  
+You need to implement `sort` and `binarySearch` functions in the program given below.  
 so that the program runs as expected!  
-You can implement any sort algorithm that you are familiar with.
+For sorting, you can implement any algorithm that you are familiar with.  
 
-In the sort algorithm you may require using following operations of string object  
-greater than `>` ` //http://www.cplusplus.com/reference/string/string/operators/
-`swap` `// http://www.cplusplus.com/reference/string/string/swap/`
-
+While implementing these functions, you may require learning following operations of string object  
+Relational operations: `//http://www.cplusplus.com/reference/string/string/operators/`  
+`swap`: `// http://www.cplusplus.com/reference/string/string/swap/`  
+  
 ```c++
 #include <stdio.h>
 #include <string>
