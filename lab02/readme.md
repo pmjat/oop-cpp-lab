@@ -3,7 +3,7 @@
 ### Exercise 1. Understand Stack Record of a function and storage allocation and freeing!
 
 Simulate execution of following program by creating and  
-destroying activation records in sequence.  
+destroying stack records (activation record) in sequence.  
 
 ```c++
 #include <stdio.h>
