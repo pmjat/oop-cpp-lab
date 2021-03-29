@@ -1,6 +1,6 @@
-# Lab02
+# Lab02: Appreciate few basic concepts 
 
-### Exercise 1. Understand Activation record and storage allocation
+### Exercise 1. Understand Stack Record of a function and storage allocation and freeing!
 
 Simulate execution of following program by creating and  
 destroying activation records in sequence.  
@@ -154,49 +154,70 @@ void print_book(const Book& b) {
 
 ### Exercise 4. Let us use `string` object of C++
 
-You need to implement sort function in program given below.
-Can implement any sort algorithm.
+You need to implement sort function in program given below.  
+so that the program runs as expected!  
+You can implement any sort algorithm that you are familiar with.
 
 In the sort algorithm you may require using following operations of string object  
-greater than `>` `//
-`swap` `//http://www.cplusplus.com/reference/string/string/swap/`
+greater than `>` ` //http://www.cplusplus.com/reference/string/string/operators/
+`swap` `// http://www.cplusplus.com/reference/string/string/swap/`
 
 ```c++
 #include <stdio.h>
 #include <string>
 
 void sort(std::string strings[], int size);
+int binarySearch(std::string strings[], int size, std::string str);
 
 int main() {
 
     //Let us learn string object of c++
-    std::string students[10];
+    std::string friends[10];
     int n = 0;
-    students[n++] = "SALIL SHUKLA";
-    students[n++] = "AZIZ HUSAIN";
-    students[n++] = "ANUBHAV SHARMA";
-    students[n++] = "RAJAT TALWAR";
-    students[n++] = "NISHANT JAIN";
-    students[n++] = "TANMAY SHAH";
-    students[n++] = "SMITA KUMARI";
-    students[n++] = "PRAGATI SHARMA";
-    students[n++] = "NIKHIL SHANTANU MARATHE";
+    friends[n++] = "SALIL";
+    friends[n++] = "AZIZ";
+    friends[n++] = "ANUBHAV";
+    friends[n++] = "RAJAT";
+    friends[n++] = "NISHANT";
+    friends[n++] = "TANMAY";
+    friends[n++] = "SMITA";
+    friends[n++] = "PRAGATI";
+    friends[n++] = "NIKHIL";
 
-    sort(students, n);
-    printf("List of students Sorted:\n");
-    for(std::string s: students)
+    sort(friends, n);
+    printf("List of friends Sorted:\n");
+    for(std::string s: friends)
         printf("%s\n", s.c_str());
+
+    //perform binary search for "RAJAT"
+    int pos = binarySearch(friends, n, "RAJAT");
+    if (pos >= 0 )
+        printf("RAJAT found at position %d\n", pos);
+    else
+        printf("RAJAT is not found in friends\n");
 
     return 0;
 
 }
 
 void sort(std::string strings[], int size) {
-    int i, j;
-    for (i = 0; i < size-1; i++)
-    for (j = 0; j < size-i-1; j++)
-        if (strings[j] > strings[j+1])
-            strings[j].swap(strings[j+1]);
+
+
+
+
+
+
+}
+
+int binarySearch(std::string strings[], int size, std::string str) {
+    //returns pos if found else returns -1;
+
+
+
+
+
+
+
 }
 ```
 
