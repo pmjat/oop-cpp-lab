@@ -159,8 +159,8 @@ so that the program runs as expected!
 For sorting, you can implement any algorithm that you are familiar with.  
 
 While implementing these functions, you may require learning following operations of string object  
-Relational operations: `//http://www.cplusplus.com/reference/string/string/operators/`  
-`swap`: `// http://www.cplusplus.com/reference/string/string/swap/`  
+Relational operations: (http://www.cplusplus.com/reference/string/string/operators/)  
+`swap`: (http://www.cplusplus.com/reference/string/string/swap/)  
   
 ```c++
 #include <stdio.h>
