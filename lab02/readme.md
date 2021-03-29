@@ -190,6 +190,7 @@ int main() {
         printf("%s\n", s.c_str());
 
     //perform binary search for "RAJAT"
+    //note that binary search assumes that input data are sorted!
     int pos = binarySearch(friends, n, "RAJAT");
     if (pos >= 0 )
         printf("RAJAT found at position %d\n", pos);
@@ -210,6 +211,7 @@ void sort(std::string strings[], int size) {
 }
 
 int binarySearch(std::string strings[], int size, std::string str) {
+    //Assume that input array is sorted.
     //returns pos if found else returns -1;
 
 
