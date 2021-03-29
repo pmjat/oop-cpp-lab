@@ -152,6 +152,53 @@ void print_book(const Book& b) {
 }
 ```
 
+### Exercise 4. Let us use `string` object of C++
+
+You need to implement sort function in program given below.
+Can implement any sort algorithm.
+
+In the sort algorithm you may require using following operations of string object  
+greater than `>` `//
+`swap` `//http://www.cplusplus.com/reference/string/string/swap/`
+
+```c++
+#include <stdio.h>
+#include <string>
+
+void sort(std::string strings[], int size);
+
+int main() {
+
+    //Let us learn string object of c++
+    std::string students[10];
+    int n = 0;
+    students[n++] = "SALIL SHUKLA";
+    students[n++] = "AZIZ HUSAIN";
+    students[n++] = "ANUBHAV SHARMA";
+    students[n++] = "RAJAT TALWAR";
+    students[n++] = "NISHANT JAIN";
+    students[n++] = "TANMAY SHAH";
+    students[n++] = "SMITA KUMARI";
+    students[n++] = "PRAGATI SHARMA";
+    students[n++] = "NIKHIL SHANTANU MARATHE";
+
+    sort(students, n);
+    printf("List of students Sorted:\n");
+    for(std::string s: students)
+        printf("%s\n", s.c_str());
+
+    return 0;
+
+}
+
+void sort(std::string strings[], int size) {
+    int i, j;
+    for (i = 0; i < size-1; i++)
+    for (j = 0; j < size-i-1; j++)
+        if (strings[j] > strings[j+1])
+            strings[j].swap(strings[j+1]);
+}
+```
 
 
 
