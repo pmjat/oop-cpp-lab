@@ -6,6 +6,7 @@ Simulate execution of following program by creating and
 destroying stack records (activation record) in sequence.  
 
 ```c++
+//source file: ex1_compex.cpp
 #include <stdio.h>
 
 typedef struct {
@@ -60,6 +61,7 @@ Understand following code and appreciate how do two overloaded versions of `read
 Also appreciate how print_complex here differs from print_complex in previous exercise.
 
 ```c++
+//source file: ex2_compex.cpp
 #include <stdio.h>
 
 typedef struct {
@@ -108,6 +110,7 @@ void print_complex(const Complex& c) {
 Complete the following program such that it runs as expected!    
 
 ```c++
+//source file: ex3_book.cpp
 #include <stdio.h>
 #include <string.h>
 
@@ -169,6 +172,7 @@ Relational operations: http://www.cplusplus.com/reference/string/string/operator
 `swap`: http://www.cplusplus.com/reference/string/string/swap/  
   
 ```c++
+//source file: ex4_string.cpp
 #include <stdio.h>
 #include <string>
 
