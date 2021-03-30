@@ -60,6 +60,9 @@ Complex add_complex(Complex c1, Complex c2) {
 Understand following code and appreciate how do two overloaded versions of `read_complex` differ?
 Also appreciate how print_complex here differs from print_complex in previous exercise.
 
+**Also, implement swap function that swaps two complex numbers using parameter by reference.
+Call that in the main for swapping values of c1 and c2 objects.**
+
 ```c++
 //source file: ex2_compex.cpp
 #include <stdio.h>
