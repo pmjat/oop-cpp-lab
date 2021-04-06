@@ -1,7 +1,7 @@
 # Lab03: Working with Objects
 
 In this lab, let you yourself learn a Object type called "list" in
-C++ library. This is basically a double linked list.
+C++ library. This is basically a doubly linked list.
 You can refer: https://www.cplusplus.com/reference/list/list/ 
 
 Below is program that is partially done. It attempst implementing "Polygon" as abstract data type.  
