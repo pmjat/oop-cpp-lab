@@ -2,7 +2,7 @@
 
 In this lab, let you yourself learn a Object type called "list" in
 C++ library. This is basically a doubly linked list.
-You can refer: https://www.cplusplus.com/reference/list/list/ 
+Here is a [summary of operations of list object](../docs/list_summary.pdf) 
 
 Below is program that is partially done. It attempst implementing "Polygon" as abstract data type.  
 
