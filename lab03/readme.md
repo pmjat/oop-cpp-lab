@@ -2,16 +2,19 @@
 
 In this lab, let you yourself learn a Object type called "list" in
 C++ library. This is basically a double linked list.
+You can refer: https://www.cplusplus.com/reference/list/list/ 
 
 Below is program that is partially done. It attempst implementing "Polygon" as abstract data type.  
 
 You are required to implement two functions:  
 1. Polygon `perimeter`. You also need to figure out how do we computer polygon perimeter.
 2. `inside`; this function checks if a point is inside the polygon. You can assume that polygon is convex.  
-You can use a technique (solution 3 at http://www.eecs.umich.edu/courses/eecs380/HANDOUTS/PROJ2/InsidePoly.html) 
+You can use a technique given as solution 3 at http://www.eecs.umich.edu/courses/eecs380/HANDOUTS/PROJ2/InsidePoly.html
+   
+Note that point data used in main function are random, and I have not checked if they form a convex polygon. You should ensure that point form a convex polygon.
 
 ```c++
-//source file: ex1_compex.cpp
+//source file: polygon.cpp
 #include <iostream>
 #include <cstring>
 #include <list>
@@ -56,8 +59,8 @@ int main() {
 
     //print all points in the same sequence and separated by ","
     //and each point is printed like (4.0,2.5)
-    print_polygon(polygon);
-    print_polygon(polygon);
+    print(polygon);
+    print(polygon);
 
     //print polygon perimeter
     printf("%8.2f\n", perimeter(polygon));
@@ -76,7 +79,7 @@ void add_point(Polygon& polygon, Point p) {
 
 }
 
-void print_polygon(const Polygon& polygon) {
+void print(const Polygon& polygon) {
 
     printf("%s\n", polygon.name);
 
@@ -84,22 +87,15 @@ void print_polygon(const Polygon& polygon) {
         printf("(%f,%f),", p.x, p.y);
     printf("\n");
 
-    /*
-        list<Point>::iterator it;
-        for(it = polygon.points.begin(); it != polygon.points.end(); ++it)
-            printf("(%f,%f),", it->x, it->y);
-        printf("\n");
-    */
-
 }
 
-//float polygon_perimeter(Point*);
 double perimeter(const Polygon& polygon) {
 
-    //distance between two points = sqrt((x2-x1)^2 + (y2-y1)^2)
 
-    //dummy implementation
-    return 1;
+
+
+
+
 
 }
 
@@ -110,8 +106,8 @@ bool inside(Polygon& polygon, Point p) {
 
 
 
-}
 
+}
 ```
 
 
