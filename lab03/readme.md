@@ -1,4 +1,4 @@
-# Lab03: Working with Objects
+# Lab03: Learn `list` object of C++ library
 
 In this lab, let you yourself learn a Object type called "list" in
 C++ library. This is basically a doubly linked list.
