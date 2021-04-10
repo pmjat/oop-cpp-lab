@@ -1,6 +1,7 @@
 # Lab04: Create your own object types
 
 Exercise 1. Complete the Complex class such that following client code works as expected!  
+Separate header information in `complex.h` while put implementation in `complex.cpp`
 
 ```c++
 #include <iostream>
