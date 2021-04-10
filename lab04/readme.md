@@ -1,9 +1,11 @@
 # Lab04: Create your own object types
 
-Exercise 1. Complete the Complex class such that following client code works as expected!  
-Separate header information in `complex.h` while put implementation in `complex.cpp`
+Exercise 1. Create Complex class such that following client code works as expected!  
+Separate header information in `complex.h` while put implementation in `complex.cpp`  
+You shall also require creating a global function `read_complex`; can be housed in `complex_tester.cpp` itself.
 
 ```c++
+//file name: complex_tester.cpp
 #include <iostream>
 
 using namespace std;
