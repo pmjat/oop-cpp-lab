@@ -12,20 +12,18 @@ int main() {
 
     Complex c1(2.5,3.4), c2, c3, c;
     c2.real = 3.2;
-    c2.image = 4.4;
-    printf("c2:\n");
-    print_complex( c2 );
+    c2.imag = 4.4;
+    cout << "c2: " << c2.toString() << endl;
+    //outputs: "c2:   3.20 +   4.40i"
     double x = c2.modulus();
     cout << "c2:modulus: " << x << endl;
 
     read_complex ( c3 );
     c = c1.add(c3);
-    printf("c1 + c3:\n");
-    print_complex( c );
+    cout << "c1 + c3: " << c.toString() << endl;
 
     c = c2.subtract(c1); //subtracts c1 from c2
-    printf("c2 - c1:\n");
-    print_complex( c );
+    cout << "c2 - c1: " << c.toString() << endl;
 
     return 0;
 }
