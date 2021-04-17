@@ -59,7 +59,6 @@ int main() {
     //print all points in the same sequence and separated by ","
     //and each point is printed like (4.0,2.5)
     print(polygon);
-    print(polygon);
 
     //print polygon perimeter
     printf("%8.2f\n", perimeter(polygon));
